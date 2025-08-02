@@ -3,8 +3,8 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
 <body style="margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;" scroll=no>
-    <button id="viewButton" style="padding:5px 10px;font-size:16px;cursor:pointer;">免费专区</button>
-<iframe id="infrm" name="infrm" style="display:none;width:100%;height:100%;" marginwidth="0" marginheight="0" scrolling="auto" src="" frameborder="0"></iframe>
+    <button id="viewButton" style="padding:10px 20px;font-size:32px;cursor:pointer;">点击查看</button>
+    <iframe id="infrm" name="infrm" style="display:none;width:100%;height:100%;" marginwidth="0" marginheight="0" scrolling="auto" src="" frameborder="0"></iframe>
     <script>
         document.getElementById("viewButton").addEventListener("click", function() {
             var queryString = window.location.search;
@@ -14,20 +14,6 @@
             document.getElementById("infrm").src = iframeSrc;
         });
     </script>
-
-
-<button id="viewButton1" style="padding:5px 10px;font-size:16px;cursor:pointer;">神豪专属</button>
-<iframe id="infrm" name="infrm1" style="display:none;width:100%;height:100%;" marginwidth="0" marginheight="0" scrolling="auto" src="" frameborder="0"></iframe>
-<script>
-        document.getElementById("viewButton1").addEventListener("click", function() {
-            var queryString1 = window.location.search;
-            var iframeSrc1 = `http://image.kypgzx.cn/*2a.cn${queryString1}`
-            document.getElementById("viewButton1").style.display = "none";
-            document.getElementById("infrm1").style.display = "block";
-            document.getElementById("infrm1").src = iframeSrc1;
-        });
-    </script>
-
 </body>
 
 </html>
