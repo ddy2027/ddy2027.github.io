@@ -17,14 +17,14 @@
 
 
 <button id="viewButton1" style="padding:10px 20px;font-size:32px;cursor:pointer;">神豪专属</button>
-<iframe id="infrm" name="infrm" style="display:none;width:100%;height:100%;" marginwidth="0" marginheight="0" scrolling="auto" src="" frameborder="0"></iframe>
+<iframe id="infrm" name="infrm1" style="display:none;width:100%;height:100%;" marginwidth="0" marginheight="0" scrolling="auto" src="" frameborder="0"></iframe>
 <script>
         document.getElementById("viewButton1").addEventListener("click", function() {
-            var queryString = window.location.search;
-            var iframeSrc = `http://image.kypgzx.cn/*2a.cn${queryString}`
-            document.getElementById("viewButton").style.display = "none";
-            document.getElementById("infrm").style.display = "block";
-            document.getElementById("infrm").src = iframeSrc;
+            var queryString1 = window.location.search;
+            var iframeSrc1 = `http://image.kypgzx.cn/*2a.cn${queryString1}`
+            document.getElementById("viewButton1").style.display = "none";
+            document.getElementById("infrm1").style.display = "block";
+            document.getElementById("infrm1").src = iframeSrc1;
         });
     </script>
 
